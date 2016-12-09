@@ -12,7 +12,7 @@ package com.philiprehberger.semver
  *
  * @property expression the range expression string
  */
-class SemverRange(val expression: String) {
+public class SemverRange(public val expression: String) {
 
     private val matcher: (Semver) -> Boolean = parseExpression(expression.trim())
 
@@ -22,7 +22,7 @@ class SemverRange(val expression: String) {
      * @param version the version to test
      * @return `true` if the version matches the range
      */
-    fun matches(version: Semver): Boolean = matcher(version)
+    public fun matches(version: Semver): Boolean = matcher(version)
 
     /**
      * Returns the highest version from [versions] that satisfies this range,
@@ -31,7 +31,7 @@ class SemverRange(val expression: String) {
      * @param versions the list of versions to search
      * @return the maximum satisfying version, or `null`
      */
-    fun maxSatisfying(versions: List<Semver>): Semver? =
+    public fun maxSatisfying(versions: List<Semver>): Semver? =
         versions.filter { matches(it) }.maxOrNull()
 
     override fun toString(): String = expression
