@@ -36,7 +36,7 @@ public class SemverRange(public val expression: String) {
 
     override fun toString(): String = expression
 
-    companion object {
+    public companion object {
 
         private fun parseExpression(expr: String): (Semver) -> Boolean {
             // Split on || for OR
