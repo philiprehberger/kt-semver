@@ -11,7 +11,7 @@ Semantic version parsing, comparison, and range matching for Kotlin.
 ### Gradle Kotlin DSL
 
 ```kotlin
-implementation("com.philiprehberger:semver:0.1.0")
+implementation("com.philiprehberger:semver:0.1.5")
 ```
 
 ### Maven
@@ -20,7 +20,7 @@ implementation("com.philiprehberger:semver:0.1.0")
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>semver</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.5</version>
 </dependency>
 ```
 
