@@ -3,6 +3,7 @@
 [![Tests](https://github.com/philiprehberger/kt-semver/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-semver/actions/workflows/publish.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/semver.svg)](https://central.sonatype.com/artifact/com.philiprehberger/semver)
 [![License](https://img.shields.io/github/license/philiprehberger/kt-semver)](LICENSE)
+[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
 
 Semantic version parsing, comparison, and range matching for Kotlin.
 
