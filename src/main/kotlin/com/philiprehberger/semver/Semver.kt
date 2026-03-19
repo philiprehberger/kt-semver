@@ -13,12 +13,12 @@ package com.philiprehberger.semver
  * @property preRelease the optional pre-release identifier (e.g. "alpha.1")
  * @property buildMetadata the optional build metadata (ignored in comparisons)
  */
-data class Semver(
-    val major: Int,
-    val minor: Int,
-    val patch: Int,
-    val preRelease: String? = null,
-    val buildMetadata: String? = null,
+public data class Semver(
+    public val major: Int,
+    public val minor: Int,
+    public val patch: Int,
+    public val preRelease: String? = null,
+    public val buildMetadata: String? = null,
 ) : Comparable<Semver> {
 
     init {
@@ -33,7 +33,7 @@ data class Semver(
      * @param version the version string to parse (e.g. "1.2.3-alpha.1+build.42")
      * @throws IllegalArgumentException if the string is not a valid semantic version
      */
-    constructor(version: String) : this(
+    public constructor(version: String) : this(
         major = parse(version).major,
         minor = parse(version).minor,
         patch = parse(version).patch,
@@ -72,7 +72,7 @@ data class Semver(
         if (buildMetadata != null) append("+$buildMetadata")
     }
 
-    companion object {
+    public companion object {
         private val SEMVER_REGEX = Regex(
             """^v?(\d+)\.(\d+)\.(\d+)(?:-([a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*))?(?:\+([a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*))?$"""
         )
@@ -86,7 +86,7 @@ data class Semver(
          * @return the parsed [Semver]
          * @throws IllegalArgumentException if the string is not a valid semantic version
          */
-        fun parse(version: String): Semver {
+        public fun parse(version: String): Semver {
             val match = SEMVER_REGEX.matchEntire(version.trim())
                 ?: throw IllegalArgumentException("Invalid semantic version: '$version'")
 
