@@ -1,5 +1,9 @@
 # semver
 
+[![Tests](https://github.com/philiprehberger/kt-semver/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-semver/actions/workflows/publish.yml)
+[![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/semver.svg)](https://central.sonatype.com/artifact/com.philiprehberger/semver)
+[![License](https://img.shields.io/github/license/philiprehberger/kt-semver)](LICENSE)
+
 Semantic version parsing, comparison, and range matching for Kotlin.
 
 ## Installation
@@ -81,6 +85,13 @@ range.maxSatisfying(versions)  // Semver(1, 5, 0)
 | `~` | `~1.2.3` | Approximately (same major.minor) |
 | ` ` (space) | `>=1.0.0 <2.0.0` | AND (intersection) |
 | `\|\|` | `1.0.0 \|\| 2.0.0` | OR (union) |
+
+## Development
+
+```bash
+./gradlew build
+./gradlew test
+```
 
 ## License
 
