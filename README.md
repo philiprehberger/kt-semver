@@ -2,8 +2,7 @@
 
 [![Tests](https://github.com/philiprehberger/kt-semver/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-semver/actions/workflows/publish.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/semver.svg)](https://central.sonatype.com/artifact/com.philiprehberger/semver)
-[![License](https://img.shields.io/github/license/philiprehberger/kt-semver)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/kt-semver)](https://github.com/philiprehberger/kt-semver/commits/main)
 
 Semantic version parsing, comparison, and range matching for Kotlin.
 
@@ -94,6 +93,24 @@ range.maxSatisfying(versions)  // Semver(1, 5, 0)
 ./gradlew test
 ```
 
+## Support
+
+If you find this project useful:
+
+⭐ [Star the repo](https://github.com/philiprehberger/kt-semver)
+
+🐛 [Report issues](https://github.com/philiprehberger/kt-semver/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+
+💡 [Suggest features](https://github.com/philiprehberger/kt-semver/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
+
+🌐 [All Open Source Projects](https://philiprehberger.com/open-source-packages)
+
+💻 [GitHub Profile](https://github.com/philiprehberger)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/philiprehberger)
+
 ## License
 
-MIT
+[MIT](LICENSE)
